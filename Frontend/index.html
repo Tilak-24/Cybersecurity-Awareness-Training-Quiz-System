@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign in - CyberAware</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="login">
+  <div class="login-page">
+    <div class="login-left">
+      <div class="brand"><span>🛡️</span> CyberAware</div>
+      <h1>Cybersecurity awareness, in five minutes at a time.</h1>
+      <p class="lead">Short training modules and scenario-based quizzes that measure what you actually retain.</p>
+      <ul>
+        <li><strong>Five focused modules</strong><br>Passwords, phishing, browsing, MFA and data privacy.</li>
+        <li><strong>Immediate feedback</strong><br>See which topics you need to revisit after each quiz.</li>
+        <li><strong>Progress tracking</strong><br>Retake quizzes and watch your scores improve.</li>
+      </ul>
+    </div>
+    <div class="login-right">
+      <div class="login-card">
+        <h2>Sign in</h2>
+        <p class="subtitle">Use your account, or pick a demonstration login below.</p>
+        <div id="loginError" class="alert alert-error hidden"></div>
+        <form id="loginForm">
+          <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" id="email" required placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required placeholder="••••••••">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="demo-accounts">
+          <h4>Demonstration accounts</h4>
+          <div class="demo-item">
+            <div class="info">
+              <strong>Administrator</strong>
+              <span>Content management and reporting</span>
+            </div>
+            <button type="button" data-demo="admin">Use →</button>
+          </div>
+          <div class="demo-item">
+            <div class="info">
+              <strong>Learner</strong>
+              <span>Training modules and quizzes</span>
+            </div>
+            <button type="button" data-demo="learner">Use →</button>
+          </div>
+        </div>
+        <p style="margin-top:16px;font-size:0.85rem;color:#64748b;text-align:center;">
+          Demo password: <strong>password123</strong>
+        </p>
+      </div>
+    </div>
+  </div>
+  <script src="js/app.js"></script>
+</body>
+</html>
